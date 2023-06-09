@@ -1,13 +1,12 @@
-# Sample Hardhat Project
+Create a smart contract and deploy it on thirdweb/ or somewhere else that smart contract must have option to:
+Transfer erc20 token
+SignMessage,
+VerifySign
+VerifyHash
+GetTransactionReceiptByHash
+GetBalanceByAddress
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+Create a NodeJS backend with API to get transaction hash in request and response back the all transaction Data (using transaction receipt function from smart contract)
 
-Try running some of the following tasks:
-
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
-```
+Create Frontend where user transfer/send token to address
+Pass that transactionHash to backend
